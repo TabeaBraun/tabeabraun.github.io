@@ -80,12 +80,14 @@ a:hover {
 
 #item-2{
   background: url("../images/mountain.jpg") center center;
+
 }
 
 #item-3{
   background: url("../images/jenny.jpg") center center;
 
 }
+
 
 .profilbild {
 width: 200px;
@@ -95,12 +97,15 @@ margin-left: 100px;
 margin-right: 0px;
 }
 
+
+
 .inhalt {
   font-family: 'Slabo 27px', serif;
   float: right;
   width: 600px;
   margin-top: 50px;
   text-align:center;
+  margin-right: 70px;
 
 }
 
@@ -154,10 +159,63 @@ p2 {
   margin-left: 450px;
   transition: 0.3s ease;
 
+
+
 }
 
 p2:hover {
   color: grey;
   border: 3px double grey;
   cursor: pointer;
+
+}
+
+.portfolio {
+  width: 498px;
+  display: inline-block;;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+  position: relative;
+
+}
+
+
+.content-box {
+  width: 498px;
+  display:inline-block;
+  margin-top: 40px;
+
+}
+
+.content-img {
+  max-width: 498px;
+  margin-bottom: -40px;
+
+}
+
+.content-box a {
+  display: none;
+}
+
+
+.content-box:hover a {
+  display: block;
+  position: absolute;
+  color: black;
+  opacity: 0.5;
+  background: rgba(255,255,255,0.85);
+  padding-top: 100px;
+  width: 498px;
+  height: 232px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Meddon', cursive;
+  font-size: 50px;
+  }
+
+
+.gallery{
+  width: 498px;
 }
