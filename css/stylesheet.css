@@ -250,13 +250,16 @@ p2:hover {
 .kontaktbox{
   width: 1000px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 60px;
+
 
 }
+
 
 .kontaktbox p3{
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+
 }
 
 
