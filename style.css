@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.header {
+
+  clip-path: circle(400px at center);
+  margin-top: -85px;
+  background-image: url("https://nosrc.io/1600x900/stock54");
+   min-height: 1000px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.textbox {
+  width: 100%;
+  height: 1500px;
+  background-color: tomato;
+  margin-top: -530px;
+  text-align: center;
+
+}
+
+.article-text{
+  color: white;
+  font-size: 30px;
+  width:500px;
+  font-family: 'Donegal One', serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-title{
+  margin-top: 400px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Donegal One', serif;
+}
+
+.article-content{
+  width:100%;
+}
+
+
+
+.banner {
+  text-align: center;
+  min-height: 500px;
+  background-image: url("https://nosrc.io/1600x900/stock30");
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+
+.box {
+  width: auto;
+}
+
+ .gallerie2 {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+   min-height: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+}
+
+
+
+ .gallerie3 {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+   min-height: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+}
+
+
+
+
+.img1 {
+animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img2 {
+  animation: bild 3s 0s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img3 {
+animation: bild 3s 4s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img4 {
+  animation: bild 3s .5s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img5 {
+animation: bild 3s 0s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img6 {
+  animation: bild 3s 1.5s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img7 {
+animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img8 {
+  animation: bild 3s 1s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+.img9 {
+  animation: bild 3s 1s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
+}
+
+
+@keyframes bild {
+  0% {
+  opacity: 1;
+  }
+
+  100% {
+  opacity: 0;
+  }
+}
+
+
+
+.img:hover{
+  cursor: pointer;
+
+}
+
+.arbeiten {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: 'Donegal One', serif;
+  font-size: 15px;
+  color: white;
+
+
+}
+
+
+
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  transition: all 0.2s;
+}
+
+.text:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+
+
+
+.bild1 {
+  width: 100px;
+  height: 100px;
+  color: red;
+  z-index: 2;
+}
+
+
+
+
+
+@media all and (max-width: 850px) {
+  .header {
+    clip-path: circle(200px at center);
+    margin-top: -280px;
+    margin-bottom: -200px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .space{
+    height: 420px;
+  }
+  .article-text{
+    font-size: 15px;
+    width: 300px;
+  }
+  .header-title{
+    font-size: 20px;
+  }
+  .textbox{
+    height: 700px;
+  }
+  .header-title{
+    margin-top: -100px;
+  }
+}
+
+
+@media all and (min-width: 1219px) {
+  .img9, .img10{
+    visibility: hidden;
+  }
+
+}
+
+
+@media all and (max-width: 915px) {
+  .img9, .img10{
+    visibility: hidden;
+  }
+
+}
+
+
+
+@media all and (max-width: 515px) {
+  .header {
+    clip-path: circle(150px at center);
+    margin-top: -320px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .space{
+    height: 430px;
+  }
+
+  .article-text{
+    font-size: 10px;
+    width: 250px;
+  }
+  .header-title{
+    font-size: 15px;
+  }
+  .textbox{
+    height: 500px;
+  }
+  .header-title{
+    margin-top: -170px;
+  }
+}
