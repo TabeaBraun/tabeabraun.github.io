@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Donegal+One|Julius+Sans+One|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Donegal+One|Julius+Sans+One|Lobster" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,79 +11,196 @@
 
 
 <body>
+
+
+
   <div class="wrapper">
-
     <div class="header">
-
       <div class="space"></div>
       <div class="text">
         <h1>Willkommen <br>auf meiner Seite</h1>
       </div>
     </div>
 
-<div class="textbox">
-  <div class="space"></div>
-  <article class="article">
-    <div class="article-content">
 
-      <h1 class="header-title">
-        Hier geht es um Fotografie!
-      </h1>
-      <div class="article-text">
-        <p>Durch Fotografie sehen wir die Dinge anders. Sie nicht objectives Werkzeug,
-        ganz im Gegenteil. Sie ist höchst subjectiv zu verstehen. Jeder Mensch fotografiert anders
-        und zwei Menschen können nie das selbe Bild erzeugen. Ein Teil des Fotografen steckt
-        in jedem Foto, dass er macht.</p>
+    <div class="textbox">
+      <div class="space"></div>
+      <article class="article">
+        <div class="article-content">
+          <h1 class="header-title">
+            Hier geht es um Fotografie!
+          </h1>
+          <div class="article-text">
+            <p>Durch Fotografie sehen wir die Dinge anders. Sie ist kein objektives Werkzeug,
+            ganz im Gegenteil. Sie ist höchst subjektiv zu verstehen. Jeder Mensch fotografiert anders
+            und zwei Menschen können nie das selbe Bild erzeugen. Ein Teil des Fotografen steckt
+            in jedem Foto, das er macht.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+    <div class="arbeiten">
+      <h1>Fotografie ist <br>meine Leidenschaft</h1>
+    </div>
+
+
+    <div class="banner"></div>
+
+
+    <div class="box">
+      <div class="überschrift">
+        <h1>Dies sind einige <br>meiner  Arbeiten</h1>
+      </div>
+
+      <div class="gallerie2">
+        <img class="img" src="josi.jpg" />
+        <img class="img" src="henny.jpg" />
+        <img class="img" src="josi2.jpg" />
+        <img class="img" src="Piet1.jpg" />
+        <img class="img" src="sab.jpg" />
+        <img class="img" src="josi3.jpg" />
+        <img class="img" src="Piet2.jpg" />
+        <img class="img" src="esther1.jpg" />
+        <img class="img img10" src="rost.jpg" />
+      </div>
+
+      <div class="gallerie3">
+        <img class="img1 img" src="jenny.jpg" />
+        <img class="img2" src="esther2.jpg" />
+        <img class="img3" src="sab2.jpg" />
+        <img class="img4" src="kaya.jpg" />
+        <img class="img5" src="bonnie.jpg" />
+        <img class="img6" src="sab4.jpg" />
+        <img class="img7" src="sab3.jpg" />
+        <img class="img8" src="bonnie2.jpg" />
+        <img class="img9" src="haus.jpg" />
+      </div>
+
+      <div class="banner2"></div>
+    </div>
+
+
+    <div class="arbeiten">
+      <h1>Lass uns Fotos von   <br>Dir machen</h1>
+    </div>
+
+
+    <div class="banner3"></div>
+
+
+    <div class="formular">
+      <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="toggle-button">
+          <div class="fototermin">
+            Möchtest du einen privaten Fototermin? Click mich!
+          </div>
+        </label>
+
+
+      <div class="toggle-content">
+        <form>
+          <label class="label" for="theme">
+            Thema des Auftrags
+          </label>
+          <input type="text"  id="theme" name="name" class="text-input" placeholder="Welches Thema soll deine Fotoserie haben?">
+
+
+          <label class="label" for="termin">
+            Wunsch Termin für Fotoshooting
+          </label>
+          <input type="date"  id="termin" name="termin" class="text-input">
+
+
+          <label class="label" for="anzahl">
+            Anzahl der Fotos
+          </label>
+          <input type="number"  id="anzahl" name="anzahl" class="text-input" min="1" max="20" value="1" step="1">
+
+
+          <label class="label" for="adresse">
+            Adresse
+          </label>
+          <input type="text"  id="adresse" name="adresse" class="text-input">
+
+
+          <label class="label" for="phone">
+            Telefonnummer
+          </label>
+          <input type="tel"  id="phone" name="phone" class="text-input">
+
+
+          <label class="label" for="email">
+            E-mail
+          </label>
+          <input type="email"  id="email" name="email" class="text-input">
+
+
+          <label class="label" for="message">
+            Nachricht
+          </label>
+          <textarea id="message" name="message" class="text-input" placeholder="Meine Nachricht" rows="10"></textarea>
+
+
+          <label class="label" >
+            Möchtest du einen monatlichen Newsletter abonieren?
+          </label>
+          <label>
+          <input type="checkbox" name="prints" value="ja">
+            Ja, ich möchte einen Newsletter erhalten.
+          </label>
+
+
+          <label class="label">
+            Möchtest du Prints deiner Fotos
+          </label>
+          <label>
+          <input type="radio" name="prints" value="ja" checked>
+            Ja
+          </label>
+
+
+          <label>
+          <input type="radio" name="prints" value="nein">
+            Nein
+          </label>
+
+
+          <button type="submit" class="text-input button">
+            Abschicken
+          </button>
+          <button type="reset" class="text-input button">
+            Doch nicht
+          </button>
+        </form>
       </div>
     </div>
-  </article>
-</div>
 
-  <div class="arbeiten">
-    <h1>Fotografie ist <br>meine Leidenschaft</h1>
-
-  </div>
+    <div class="scene">
 
 
 
+    <svg class="tile-image layer" data-depth="1" viewBox="-200 0 1000 1000" >
+    <image class="background" xlink:href="tabz.jpg" x="0" y="0" width="800" height="800" />
+    </svg>
 
-<div class="banner"></div>
-
-
-
-<div class ="box">
-
-  <div class="gallerie2">
-
-    <img class="img" src="https://nosrc.io/300x300/stock64" />
-    <img class="img" src="https://nosrc.io/300x300/stock104" />
-    <img class="img" src="https://nosrc.io/300x300/stock24" />
-    <img class="img" src="https://nosrc.io/300x300/stock3" />
-    <img class="img" src="https://nosrc.io/300x300/stock6" />
-    <img class="img" src="https://nosrc.io/300x300/stock89" />
-    <img class="img" src="https://nosrc.io/300x300/stock90" />
-    <img class="img" src="https://nosrc.io/300x300/stock7" />
-    <img class="img img10" src="https://nosrc.io/300x300/stock66" />
-  </div>
+    <svg class="tile-image layer" data-depth="2" viewBox="-200 100 1000 1000">
+    <circle cx="500" cy="400" r="270" fill="honeydew" stroke="turquoise" stroke-width="20"/>
+    <text x="0" y="240" font-family="'lobster', serif" font-size="60px" fill="tomato"><tspan x="320" dy="1.2em">Leider gibt's hier</tspan>
+    <tspan x="320" dy="1.2em">gar keine Fotos!</tspan><tspan x="320" dy="1.2em">Aber danke für's</tspan><tspan x="320" dy="1.2em">Anschauen!</tspan></text>
 
 
-  <div class="gallerie3">
-    <img class="img1 img" src="https://nosrc.io/300x300/stock4" />
-    <img class="img2" src="https://nosrc.io/300x300/stock14" />
-    <img class="img3" src="https://nosrc.io/300x300/stock2" />
-    <img class="img4" src="https://nosrc.io/300x300/stock9" />
-    <img class="img5" src="https://nosrc.io/300x300/stock11" />
-    <img class="img6" src="https://nosrc.io/300x300/stock111" />
-    <img class="img7" src="https://nosrc.io/300x300/stock222" />
-    <img class="img8" src="https://nosrc.io/300x300/stock44" />
-    <img class="img9" src="https://nosrc.io/300x300/stock77" />
-  </div>
 
-</div>
+    </svg>
 
+
+    </div>
 
 
   </div>
-
 </body>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="jquery.parallax.min.js"></script>
+<script src="scripts.js"></script>
 </html>

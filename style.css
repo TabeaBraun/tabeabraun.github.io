@@ -4,19 +4,46 @@
 
 
 
+/*CSS Struktur "in order of appearance" und ganz zum Schluss kommen die @media-Tags  :D
+  clip-path funktioniert in diesem Zusammenhang nicht mit Safari*/
 
 .header {
-
   clip-path: circle(400px at center);
   margin-top: -85px;
-  background-image: url(henny.jpg);
-   min-height: 1000px;
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-
+  background-image: url("https://nosrc.io/1600x900/stock54");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+.space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  transition: all 0.2s;
+}
+
+
+.text:hover {
+  transform: scale(1.05);
+}
+
 
 .textbox {
   width: 100%;
@@ -24,8 +51,16 @@
   background-color: tomato;
   margin-top: -530px;
   text-align: center;
-
 }
+
+
+.header-title{
+  margin-top: 400px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Donegal One', serif;
+}
+
 
 .article-text{
   color: white;
@@ -36,17 +71,18 @@
   margin-right: auto;
 }
 
-.header-title{
-  margin-top: 400px;
-  color: white;
-  font-size: 40px;
+
+.arbeiten {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  text-align: center;
   font-family: 'Donegal One', serif;
+  font-size: 15px;
+  color: white;
 }
-
-.article-content{
-  width:100%;
-}
-
 
 
 .banner {
@@ -61,9 +97,18 @@
  }
 
 
-.box {
-  width: auto;
-}
+ .box {
+   width: auto;
+ }
+
+
+ .überschrift{
+   text-align: center;
+   font-family: 'Lobster', cursive;
+   font-size: 40px;
+   color: tomato;
+ }
+
 
  .gallerie2 {
    margin-top: 50px;
@@ -74,7 +119,6 @@
    margin-right: auto;
    position: absolute;
 }
-
 
 
  .gallerie3 {
@@ -88,7 +132,9 @@
 }
 
 
-
+/*Safari scheint etwas überfordert mit der Keyframe Animation zu sein.
+  Das bedeutet, sie funktioniert im Grunde. Jedoch stockt sie am Anfang und
+  läuft erst flüssig, wenn man den Tab wechselt. Chrome hat damit keine Probleme*/
 
 .img1 {
 animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
@@ -138,66 +184,151 @@ animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
 }
 
 
-
-.img:hover{
-  cursor: pointer;
-
-}
-
-.arbeiten {
-  position: absolute;
-  background-color: transparent;
+.banner2{
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 10px;
+  height: 700px;
+}
+
+
+ .banner3 {
+   text-align: center;
+   min-height: 500px;
+   background-image: url("https://nosrc.io/1600x900/stock140");
+   width: auto;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+
+.formular{
   text-align: center;
-  font-family: 'Donegal One', serif;
-  font-size: 15px;
+  height: 1000px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: tomato;
+  border-radius: 10px;
+  height: 100%;
   color: white;
-
-
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 
 
 
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
+.toggle{
+  display: none;
+}
+
+
+.toggle-button{
+  display: inline-block;
+  background-color: tomato;
   color: white;
-  position: relative;
-  text-align: center;
-  font-family: 'Lobster', cursive;
-  transition: all 0.2s;
-}
-
-.text:hover {
-  transform: scale(1.05);
+  padding: 52px;
+  width: 80%;
+  font-family: 'lobster', serif;
+  font-size: 50px;
 }
 
 
-
-
-.space {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 320px;
+.toggle-button:hover{
+  cursor: pointer;
 }
 
 
-
-.bild1 {
-  width: 100px;
-  height: 100px;
-  color: red;
-  z-index: 2;
+.toggle-content {
+  display: none;
 }
 
 
+.toggle:checked ~ .toggle-content {
+  display: block;
+}
 
+
+.form{
+  width: 100%;
+}
+
+
+.label {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 3em 0em 0.2em 0em;
+    font-family: 'lobster', serif;
+  }
+
+
+  .text-input {
+    font: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: 5px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Donegal One', serif;
+    color: darkgray;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+  }
+
+
+  .button{
+    background: lightgreen;
+    color: white;
+    border: inherit;
+    margin-top: 1em;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'lobster', serif;
+  }
+
+
+  .button[type="reset"] {
+    background: darkred;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .button:hover{
+    cursor: pointer;
+  }
+
+
+
+
+@media all and (max-width: 1219px) {
+  .banner2{
+    height: 1000px;
+  }
+}
+
+
+@media all and (max-width: 915px) {
+  .banner2{
+    height: 1320px;
+  }
+}
+
+
+@media all and (max-width: 611px) {
+  .banner2{
+    height: 2530px;
+  }
+}
 
 
 @media all and (max-width: 850px) {
@@ -207,6 +338,9 @@ animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
     margin-bottom: -200px;
   }
   .text {
+    font-size: 20px;
+  }
+  .überschrift{
     font-size: 20px;
   }
   .space{
@@ -225,24 +359,10 @@ animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
   .header-title{
     margin-top: -100px;
   }
-}
-
-
-@media all and (min-width: 1219px) {
-  .img9, .img10{
-    visibility: hidden;
+.fototermin{
+  font-size: 30px;
   }
-
 }
-
-
-@media all and (max-width: 915px) {
-  .img9, .img10{
-    visibility: hidden;
-  }
-
-}
-
 
 
 @media all and (max-width: 515px) {
@@ -251,6 +371,9 @@ animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
     margin-top: -320px;
   }
   .text {
+    font-size: 15px;
+  }
+  .überschrift{
     font-size: 15px;
   }
   .space{
@@ -270,4 +393,34 @@ animation: bild 3s 2s infinite alternate cubic-bezier(0.71,-0.52,0.38,1.44);
   .header-title{
     margin-top: -170px;
   }
+  .formular{
+    width: auto;
+  }
+  .fototermin{
+    font-size: 25px;
+  }
+}
+
+
+@media all and (min-width: 1219px) {
+  .img9, .img10{
+    visibility: hidden;
+  }
+}
+
+
+@media all and (max-width: 915px) {
+  .img9, .img10{
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+.tile-image{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
